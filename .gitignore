@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Environment files
+.env
+.env.*
+
+# PyCharm / JetBrains
+.idea/
+
+# OS files
+.DS_Store
+
+# Docker / local data
+*.log
