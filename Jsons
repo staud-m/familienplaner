@@ -1,1 +1,28 @@
+++ Helthcheck
+Request GET /api/health
+Response:
+{
+  "status": "ok",
+  "service": "familienplaner-backend",
+  "version": "0.1.0"
+}
 
+++ Shoping items
+Request : GET /api/shopping/items
+Response :
+[
+  {
+    "id": "7f5d3e1a-2d62-4c58-8a11-3f41f49d9c01",
+    "name": "Milk",
+    "category": "Groceries",
+    "is_done": false,
+    "created_at": "2026-05-13T10:30:00"
+  },
+  {
+    "id": "2a8b9ef3-90b1-4e2d-91bc-832d4ef93c22",
+    "name": "Toilet paper",
+    "category": "Household",
+    "is_done": true,
+    "created_at": "2026-05-13T10:35:00"
+  }
+]
