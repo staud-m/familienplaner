@@ -19,3 +19,9 @@ env/
 
 # Docker / local data
 *.log
+
+# Node / React
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
