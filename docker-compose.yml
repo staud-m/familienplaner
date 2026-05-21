@@ -41,5 +41,20 @@ services:
     ports:
       - "5173:80"
 
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    ports:
+      - "8888:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: user@familienplaner.com
+      PGADMIN_DEFAULT_PASSWORD: password
+    volumes:
+      - familienplaner_pgadmindata:/var/lib/pgadmin
+    depends_on:
+      db:
+        condition: service_healthy
+
 volumes:
   familienplaner_pgdata:
+  familienplaner_pgadmindata:
